@@ -1,19 +1,14 @@
 import Head from "next/head";
-import Link from "next/link";
 
-
-
-export default function Index() {
-
-  return (
+export default function About() {
+  return(
     <>
       <Head>
         <title>Create Next App</title>
       </Head>
       <main>
-        <Link href={"/home"}>Home</Link>
-      
+        <h1>About me</h1>
       </main>
     </>
-  );
+  )
 }
