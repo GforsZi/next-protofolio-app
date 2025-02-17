@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Navbar() {
   return(
     <>
-<nav className="navbar navbar-expand-lg bg-none position-fixed border-bottom vw-100 border-dark-subtle" style={{backgroundColor: "rgba(150, 150, 150, 0.2)"}}>
+<nav className="navbar navbar-expand-lg bg-none position-fixed z-2 border-bottom vw-100 border-dark-subtle" style={{backgroundColor: "rgba(212, 212, 212, 0.4)"}}>
   <div className="container d-flex justify-content-between">
     <div>
     <a className="navbar-brand text-start" href="/">Givaldi</a>

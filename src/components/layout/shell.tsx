@@ -25,14 +25,13 @@ export default function Shell(props:shellProps) {
   return (
     <div>
             <div className="position-relative vh-100">
-      {/* Gerbang Kiri */}
+
       <div
         ref={leftDoorRef}
         className="position-fixed z-3 top-0 start-0 w-50 h-100 bg-dark"
         style={{ transform: "translateX(0%)" }}
       ></div>
 
-      {/* Gerbang Kanan */}
       <div
         ref={rightDoorRef}
         className="position-fixed z-3 top-0 end-0 w-50 h-100 bg-dark"
