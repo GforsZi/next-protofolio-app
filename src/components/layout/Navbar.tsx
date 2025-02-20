@@ -24,8 +24,16 @@ export default function Navbar() {
         <li className="nav-item">
           <Link className="nav-link"href="/home">Home</Link>
         </li>
-        <li className="nav-item">
-          <Link className="nav-link" href="/about">About</Link>
+        <li className="nav-item dropdown">
+          <Link className="nav-link dropdown-toggle" href="/about/skill" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About
+          </Link>
+          <ul className="dropdown-menu">
+            <li><Link className="dropdown-item" href="/about/">Me</Link></li>
+            <li><hr className="dropdown-divider"/></li>
+            <li><Link className="dropdown-item" href="/about/my/project">My project</Link></li>
+            <li><Link className="dropdown-item" href="/about/my/achievement">My achievement</Link></li>
+          </ul>
         </li>
         <li className="nav-item dropdown">
           <Link className="nav-link dropdown-toggle" href="/about/skill" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -35,7 +43,7 @@ export default function Navbar() {
             <li><Link className="dropdown-item" href="/about/skill/frontend">Frontend</Link></li>
             <li><Link className="dropdown-item" href="/about/skill/backend">Backend</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><Link className="dropdown-item" href="/about/skill/project">Project</Link></li>
+            <li><Link className="dropdown-item" href="/about/skill/non_programming">Non programming</Link></li>
           </ul>
         </li>
       </ul>
