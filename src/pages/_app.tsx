@@ -7,5 +7,5 @@ export default function App({ Component, pageProps }: AppProps) {
     <Shell>
       <Component {...pageProps} />
     </Shell>
-);
+  );
 }
