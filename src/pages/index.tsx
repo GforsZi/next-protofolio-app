@@ -2,6 +2,7 @@ import dynamic from "next/dynamic";
 import Head from "next/head";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
+import Image from "next/image";
 
 const HeavyComponent = dynamic(() => import("../components/layout/shell"), {
   ssr: false,
@@ -48,13 +49,20 @@ export default function Index() {
               <div className="container-lg text-center">
                 <div className="row gap-3">
                   <div
-                    className="col w-100   p-2 rounded"
-                    style={{ minWidth: "300px" }}
+                    className="col w-100 p-2 rounded"
+                    style={{
+                      minWidth: "300px",
+                    }}
                   >
-                    <div
-                      className="w-100 bg-primary"
-                      style={{ height: "400px" }}
-                    ></div>
+                    <div className="w-100">
+                      <Image
+                        src={"/img/mainchar.png"}
+                        alt="mainchar"
+                        className="w-100 object-fit-contain"
+                        width={"400"}
+                        height={"400"}
+                      />
+                    </div>
                   </div>
                   <div
                     className="col w-100 d-flex p-2 rounde align-items-center"
@@ -90,12 +98,7 @@ export default function Index() {
           className=" w-100 vh-100 position-relative d-flex align-items-center"
           style={{
             background:
-              "linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url('/img/home.jpg');",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundAttachment: "scroll",
-            backgroundSize: "cover",
-            minHeight: "35rem",
+              "linear-gradient(to top, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.4) 75%, #000 100%)",
           }}
         >
           <div className="container px-4 px-lg-5 d-flex h-100 d-flex align-items-center  justify-content-center">
@@ -104,18 +107,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-        <div
-          className=" w-100 vh-100 position-relative d-flex align-items-center"
-          style={{
-            background:
-              "linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url('/img/section_1.jpg');",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            backgroundAttachment: "scroll",
-            backgroundSize: "cover",
-            minHeight: "35rem",
-          }}
-        >
+        <div className=" w-100 vh-100 position-relative d-flex align-items-center">
           <div className="container px-4 px-lg-5 d-flex h-100 d-flex align-items-center  justify-content-center">
             <div className="d-flex w-100 h-100 align-items-center">
               <div className="container-lg text-center">{/* isi */}</div>
