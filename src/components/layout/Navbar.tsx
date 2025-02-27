@@ -62,6 +62,13 @@ export default function Navbar() {
                       <ul className="dropdown-menu">
                         <li>
                           <Link className="dropdown-item" href="/about/">
+                            <Image
+                              src={"/icon/user.svg"}
+                              alt=""
+                              className="me-1"
+                              width={"20"}
+                              height={"20"}
+                            />
                             Me
                           </Link>
                         </li>
@@ -73,6 +80,13 @@ export default function Navbar() {
                             className="dropdown-item"
                             href="/about/my/project"
                           >
+                            <Image
+                              src={"/icon/codepen.svg"}
+                              alt=""
+                              className="me-1"
+                              width={"20"}
+                              height={"20"}
+                            />
                             My project
                           </Link>
                         </li>
@@ -81,6 +95,13 @@ export default function Navbar() {
                             className="dropdown-item"
                             href="/about/my/achievement"
                           >
+                            <Image
+                              src={"/icon/award.svg"}
+                              alt=""
+                              className="me-1"
+                              width={"20"}
+                              height={"20"}
+                            />
                             My achievement
                           </Link>
                         </li>
@@ -102,6 +123,13 @@ export default function Navbar() {
                             className="dropdown-item"
                             href="/about/skill/frontend"
                           >
+                            <Image
+                              src={"/icon/layout.svg"}
+                              alt=""
+                              className="me-1"
+                              width={"20"}
+                              height={"20"}
+                            />
                             Frontend
                           </Link>
                         </li>
@@ -110,6 +138,13 @@ export default function Navbar() {
                             className="dropdown-item"
                             href="/about/skill/backend"
                           >
+                            <Image
+                              src={"/icon/settings.svg"}
+                              alt=""
+                              className="me-1"
+                              width={"20"}
+                              height={"20"}
+                            />
                             Backend
                           </Link>
                         </li>
@@ -121,6 +156,13 @@ export default function Navbar() {
                             className="dropdown-item"
                             href="/about/skill/non_programming"
                           >
+                            <Image
+                              src={"/icon/monitor.svg"}
+                              alt=""
+                              className="me-1"
+                              width={"20"}
+                              height={"20"}
+                            />
                             Non programming
                           </Link>
                         </li>

@@ -90,7 +90,44 @@ export default function Index() {
                           make up the bulk of the card's content.
                         </p>
                       </div>
-                      <div className="card-header"></div>
+                      <div className="card-header w-100 d-flex justify-content-end">
+                        <a href="#email">
+                          <Image
+                            src={"/icon/mail.svg"}
+                            alt=""
+                            className="mx-1"
+                            width={"30"}
+                            height={"30"}
+                          />
+                        </a>
+                        <a href="#wa">
+                          <Image
+                            src={"/icon/message-circle.svg"}
+                            alt=""
+                            className="mx-1"
+                            width={"30"}
+                            height={"30"}
+                          />
+                        </a>
+                        <a href="#ig">
+                          <Image
+                            src={"/icon/instagram.svg"}
+                            alt=""
+                            className="mx-1"
+                            width={"30"}
+                            height={"30"}
+                          />
+                        </a>
+                        <a href="#github">
+                          <Image
+                            src={"/icon/github.svg"}
+                            alt=""
+                            className="mx-1"
+                            width={"30"}
+                            height={"30"}
+                          />
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -107,7 +144,16 @@ export default function Index() {
         >
           <div className="container px-4 px-lg-5 d-flex h-100 d-flex align-items-center  justify-content-center">
             <div className="d-flex w-100 h-100 align-items-center">
-              <div className="container-lg text-center">{/* isi */}</div>
+              <div className="container-lg text-center">
+                {/* isi */}
+                <h1
+                  className="text-white"
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                >
+                  yahahai
+                </h1>
+              </div>
             </div>
           </div>
         </div>
