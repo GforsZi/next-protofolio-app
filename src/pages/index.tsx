@@ -154,13 +154,32 @@ export default function Index() {
             <div className="d-flex w-100 h-100 align-items-center">
               <div className="container-lg text-center">
                 {/* isi */}
-                <h1
-                  className="text-white"
-                  data-aos="fade-up"
-                  data-aos-anchor-placement="center-bottom"
+                <div
+                  className="row g-0 border border-primary rounded overflow-hidden text-white flex-md-row shadow-sm h-md-250 position-relative"
+                  style={{ minHeight: "250px" }}
                 >
-                  yahahai
-                </h1>
+                  <div className="col-auto d-none d-md-block h-100">
+                    <Image
+                      src={"/img/aboutme.jpg"}
+                      alt=""
+                      className="h-100 ms-5"
+                      height={"250"}
+                      width={"200"}
+                    />
+                  </div>
+                  <div className="col p-4 d-flex flex-column position-static">
+                    <strong className="d-inline-block mb-2 text-primary">
+                      Hello World
+                    </strong>
+                    <h3 className="mb-0">About Me</h3>
+                    <div className="mb-1 text-body-secondary">Nov 12</div>
+                    <p className="card-text mb-auto">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content.
+                    </p>
+                    Continue reading
+                  </div>
+                </div>
               </div>
             </div>
           </div>
