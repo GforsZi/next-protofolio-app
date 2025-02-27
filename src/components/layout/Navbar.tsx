@@ -11,7 +11,13 @@ export default function Navbar() {
         <div className="container d-flex justify-content-between">
           <div>
             <a className="navbar-brand text-start" href="/">
-              Givaldi
+              <Image
+                src={"/img/homechar.jpg"}
+                alt=""
+                className="rounded-circle"
+                width={"40"}
+                height={"40"}
+              />
             </a>
           </div>
           <div>

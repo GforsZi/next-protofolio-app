@@ -85,9 +85,17 @@ export default function Index() {
                         <h3 className="card-title mb-4">
                           Givaldi Gumelar Setiawan
                         </h3>
-                        <p className="card-text fs-5">
-                          Some quick example text to build on the card title and
-                          make up the bulk of the card's content.
+                        <p className="card-text fs-5 text-start">
+                          Saya merupakan seorang programmer dibidang
+                          pengembangan website khususnya diranah backend...
+                          <a
+                            type="button"
+                            className="ms-1"
+                            data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"
+                          >
+                            Detail
+                          </a>
                         </p>
                       </div>
                       <div className="card-header w-100 d-flex justify-content-end">
@@ -165,6 +173,38 @@ export default function Index() {
           </div>
         </div>
       </main>
+      <div
+        className="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabIndex={-1}
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content rounded-3 shadow">
+            <div className="modal-body p-4 text-center">
+              <h5 className="mb-2">Givaldi Gumelar Setiawan</h5>
+              <p className="mb-0 text-start">
+                Saya merupakan seorang programmer dibidang pengembangan website
+                khususnya diranah backend. Saya selalu berusaha menerapkan
+                konsep clean code di semua project yang saya kerjakan agar mudah
+                dikembangkan dan dipelihara.
+              </p>
+            </div>
+            <div className="modal-footer  p-0">
+              <button
+                type="button"
+                className="btn btn-lg btn-link fs-6 text-decoration-none w-100 py-3 m-0 rounded-0"
+                data-bs-dismiss="modal"
+              >
+                oke
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
