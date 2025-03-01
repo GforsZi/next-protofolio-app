@@ -3,6 +3,8 @@ import Head from "next/head";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import Image from "next/image";
+import Ld_container from "@/components/layout/ld_container";
+import Link from "next/link";
 
 const HeavyComponent = dynamic(() => import("../components/layout/shell"), {
   ssr: false,
@@ -58,6 +60,7 @@ export default function Index() {
                       <Image
                         src={"/img/mainchar.png"}
                         alt="mainchar"
+                        priority
                         className="w-100 object-fit-contain"
                         width={"400"}
                         height={"400"}
@@ -143,54 +146,167 @@ export default function Index() {
             </div>
           </div>
         </header>
-        <div
-          className=" w-100 vh-100 position-relative d-flex align-items-center"
-          style={{
-            background:
-              "linear-gradient(to top, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.4) 75%, #000 100%)",
-          }}
-        >
-          <div className="container px-4 px-lg-5 d-flex h-100 d-flex align-items-center  justify-content-center">
-            <div className="d-flex w-100 h-100 align-items-center">
-              <div className="container-lg text-center">
-                {/* isi */}
-                <div
-                  className="row g-0 border border-primary rounded overflow-hidden text-white flex-md-row shadow-sm h-md-250 position-relative"
-                  style={{ minHeight: "250px" }}
-                >
-                  <div className="col-auto d-none d-md-block h-100">
-                    <Image
-                      src={"/img/aboutme.jpg"}
-                      alt=""
-                      className="h-100 ms-5"
-                      height={"250"}
-                      width={"200"}
-                    />
-                  </div>
-                  <div className="col p-4 d-flex flex-column position-static">
-                    <strong className="d-inline-block mb-2 text-primary">
-                      Hello World
-                    </strong>
-                    <h3 className="mb-0">About Me</h3>
-                    <div className="mb-1 text-body-secondary">Nov 12</div>
-                    <p className="card-text mb-auto">
-                      This is a wider card with supporting text below as a
-                      natural lead-in to additional content.
+        <Ld_container>
+          <div
+            className="row g-0 border border-primary rounded overflow-hidden text-white flex-md-row shadow-sm h-md-250 position-relative"
+            style={{ minHeight: "250px" }}
+          >
+            <div className="col-auto d-none d-md-block h-100">
+              <Image
+                src={"/img/aboutme.jpg"}
+                alt=""
+                priority
+                className="h-100 ms-5"
+                height={"250"}
+                width={"250"}
+              />
+            </div>
+            <div className="col p-4 d-flex flex-column position-static">
+              <strong className="d-inline-block mb-2 text-primary">
+                Hello World
+              </strong>
+              <h3 className="mb-0">About Me</h3>
+              <div className="mb-1 text-body-secondary">Nov 12</div>
+              <p className="card-text mb-auto">
+                Saya lahir pada 2007 di Cianjur, sejak umur 2 tahun saya sudah
+                diperkenalkan pada dunia komputer oleh ayah saya dan saat saya
+                menginjak bangku SMP saya memberanikan diri untuk mempelajari
+                ilmu komputer dengan lebih mendalam mulai dari hardware hingga
+                software saya pelajari.
+              </p>
+              <Link href={"/about"}>Continue reading</Link>
+            </div>
+          </div>
+        </Ld_container>
+        <Ld_container>
+          <div>
+            <div
+              id="carouselExampleCaptions"
+              className="carousel slide border border-primary p-3"
+            >
+              <h1 className="text-primary border-bottom border-primary">
+                My skill
+              </h1>
+              <div className="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  className="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div className="carousel-inner">
+                <div className="carousel-item active">
+                  <Image
+                    src={"/img/frontend.jpg"}
+                    alt=""
+                    priority
+                    unoptimized
+                    className="w-100 object-fit-cover"
+                    width={"250"}
+                    height={"400"}
+                  />
+                  <div className="carousel-caption rounded-2 bg-dark text-white">
+                    <Link
+                      href={"/about/skill/frontend"}
+                      className="fs-4 text-decoration-none"
+                    >
+                      Frontend
+                    </Link>
+                    <p className="d-none d-md-block">
+                      Saya memiliki keahlian dalam penggunaan frontend framework
+                      yakni: bootstrap, tailwind, reactjs, dan vuejs
                     </p>
-                    Continue reading
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <Image
+                    src={"/img/backendbg.jpg"}
+                    alt=""
+                    priority
+                    unoptimized
+                    className="w-100 object-fit-cover"
+                    width={"250"}
+                    height={"400"}
+                  />
+                  <div className="carousel-caption rounded-2 bg-dark text-white">
+                    <Link
+                      href={"/about/skill/backend"}
+                      className="fs-4 text-decoration-none"
+                    >
+                      Backend
+                    </Link>
+                    <p className="d-none d-md-block">
+                      Saya menguasai dua bahasa pemograman yakni nodejs dan php
+                      beserta framework populernya.
+                    </p>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <Image
+                    src={"/img/office.jpg"}
+                    alt=""
+                    priority
+                    unoptimized
+                    className="w-100 object-fit-cover"
+                    width={"250"}
+                    height={"400"}
+                  />
+                  <div className="carousel-caption rounded-2 bg-dark text-white">
+                    <Link
+                      href={"/about/skill/non_programming"}
+                      className="fs-4 text-decoration-none"
+                    >
+                      other
+                    </Link>
+                    <p className="d-none d-md-block">
+                      Selain coding saya juga menguasai beberapa skil seperti:
+                      editing, design, office, dan lain lain.
+                    </p>
                   </div>
                 </div>
               </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
-        </div>
-        <div className=" w-100 vh-100 position-relative d-flex align-items-center">
-          <div className="container px-4 px-lg-5 d-flex h-100 d-flex align-items-center  justify-content-center">
-            <div className="d-flex w-100 h-100 align-items-center">
-              <div className="container-lg text-center">{/* isi */}</div>
-            </div>
-          </div>
-        </div>
+        </Ld_container>
       </main>
       <div
         className="modal fade"
