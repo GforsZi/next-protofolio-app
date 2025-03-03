@@ -29,8 +29,7 @@ export default function my_project() {
                         className="text-white-50 mx-auto mt-2 mb-5 fs-4 "
                         style={{ maxWidth: "30rem" }}
                       >
-                        Sebuah perangkat lunak yang dirancang untuk kebutuhan
-                        absensi menggunakan RFID sensor
+                        Coming Soon
                       </h2>
 
                       <h1

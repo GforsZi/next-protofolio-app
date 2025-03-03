@@ -5,6 +5,7 @@ import gsap from "gsap";
 import Image from "next/image";
 import Ld_container from "@/components/layout/ld_container";
 import Link from "next/link";
+import Card from "@/components/layout/card";
 
 const HeavyComponent = dynamic(() => import("../components/layout/shell"), {
   ssr: false,
@@ -24,6 +25,12 @@ export default function Index() {
       ease: "power3.out",
     });
   }, []);
+
+  const items = [
+    { title: "Gambar 1", image: "/img/office.jpg" },
+    { title: "Gambar 2", image: "/img/backendbg.jpg" },
+    { title: "Gambar 3", image: "/img/frontend.jpg" },
+  ];
 
   return (
     <>
@@ -172,7 +179,8 @@ export default function Index() {
                 diperkenalkan pada dunia komputer oleh ayah saya dan saat saya
                 menginjak bangku SMP saya memberanikan diri untuk mempelajari
                 ilmu komputer dengan lebih mendalam mulai dari hardware hingga
-                software saya pelajari.
+                software saya pelajari. Sampai hingga akhirnya saya terjun ke
+                dunia programming pada usia 15 tahun...
               </p>
               <Link href={"/about"}>Continue reading</Link>
             </div>
@@ -220,7 +228,7 @@ export default function Index() {
                     width={"250"}
                     height={"400"}
                   />
-                  <div className="carousel-caption rounded-2 bg-dark text-white">
+                  <div className="carousel-caption border border-primary rounded-2 bg-dark text-white">
                     <Link
                       href={"/about/skill/frontend"}
                       className="fs-4 text-decoration-none"
@@ -243,7 +251,7 @@ export default function Index() {
                     width={"250"}
                     height={"400"}
                   />
-                  <div className="carousel-caption rounded-2 bg-dark text-white">
+                  <div className="carousel-caption border border-primary rounded-2 bg-dark text-white">
                     <Link
                       href={"/about/skill/backend"}
                       className="fs-4 text-decoration-none"
@@ -251,8 +259,8 @@ export default function Index() {
                       Backend
                     </Link>
                     <p className="d-none d-md-block">
-                      Saya menguasai dua bahasa pemograman yakni nodejs dan php
-                      beserta framework populernya.
+                      Saat ini saya menguasai dua bahasa pemograman yakni nodejs
+                      dan php beserta framework populernya.
                     </p>
                   </div>
                 </div>
@@ -266,7 +274,7 @@ export default function Index() {
                     width={"250"}
                     height={"400"}
                   />
-                  <div className="carousel-caption rounded-2 bg-dark text-white">
+                  <div className="carousel-caption border border-primary rounded-2 bg-dark text-white">
                     <Link
                       href={"/about/skill/non_programming"}
                       className="fs-4 text-decoration-none"
@@ -306,6 +314,9 @@ export default function Index() {
               </button>
             </div>
           </div>
+        </Ld_container>
+        <Ld_container>
+          <Card items={items} />
         </Ld_container>
       </main>
       <div
