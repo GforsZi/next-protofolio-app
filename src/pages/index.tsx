@@ -27,9 +27,24 @@ export default function Index() {
   }, []);
 
   const items = [
-    { title: "Gambar 1", image: "/img/office.jpg" },
-    { title: "Gambar 2", image: "/img/backendbg.jpg" },
-    { title: "Gambar 3", image: "/img/frontend.jpg" },
+    {
+      label: "card-1",
+      title: "Gambar 1",
+      description: "yahahi",
+      image: "/img/office.jpg",
+    },
+    {
+      label: "card-2",
+      title: "Gambar 2",
+      description: "yahahai",
+      image: "/img/backendbg.jpg",
+    },
+    {
+      label: "card-3",
+      title: "Gambar 3",
+      description: "yahahai",
+      image: "/img/frontend.jpg",
+    },
   ];
 
   return (
@@ -109,7 +124,7 @@ export default function Index() {
                         </p>
                       </div>
                       <div className="card-header w-100 d-flex justify-content-end">
-                        <a href="#email">
+                        <a href="https://givaldigumelarsetiawan@gmail.com">
                           <Image
                             src={"/icon/mail.svg"}
                             alt=""
@@ -118,7 +133,7 @@ export default function Index() {
                             height={"30"}
                           />
                         </a>
-                        <a href="#wa">
+                        <a href="https://wa.me/qr/KCC4Z7RZPKW4O1">
                           <Image
                             src={"/icon/message-circle.svg"}
                             alt=""
@@ -127,7 +142,7 @@ export default function Index() {
                             height={"30"}
                           />
                         </a>
-                        <a href="#ig">
+                        <a href="https://www.instagram.com/giv.aldi07?igsh=cDVlZWdsZmFqMGJk">
                           <Image
                             src={"/icon/instagram.svg"}
                             alt=""
@@ -136,7 +151,7 @@ export default function Index() {
                             height={"30"}
                           />
                         </a>
-                        <a href="#github">
+                        <a href="https://github.com/GforsZi">
                           <Image
                             src={"/icon/github.svg"}
                             alt=""
@@ -329,10 +344,10 @@ export default function Index() {
         aria-hidden="true"
       >
         <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content rounded-3 shadow">
+          <div className="modal-content bg-dark border border-primary rounded-3 shadow">
             <div className="modal-body p-4 text-center">
-              <h5 className="mb-2">Givaldi Gumelar Setiawan</h5>
-              <p className="mb-0 text-start">
+              <h5 className="mb-2 text-primary">Givaldi Gumelar Setiawan</h5>
+              <p className="mb-0 text-start text-white">
                 Saya merupakan seorang programmer dibidang pengembangan website
                 khususnya diranah backend. Saya selalu berusaha menerapkan
                 konsep clean code di semua project yang saya kerjakan agar mudah
@@ -342,7 +357,7 @@ export default function Index() {
             <div className="modal-footer  p-0">
               <button
                 type="button"
-                className="btn btn-lg btn-link fs-6 text-decoration-none w-100 py-3 m-0 rounded-0"
+                className="btn btn-dark text-primary fs-6 text-decoration-none w-100 py-3 m-0 rounded-0"
                 data-bs-dismiss="modal"
               >
                 oke
