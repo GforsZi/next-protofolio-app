@@ -29,21 +29,33 @@ export default function Index() {
   const items = [
     {
       label: "card-1",
-      title: "Gambar 1",
+      title: "S1 Informatika",
       description: "yahahi",
-      image: "/img/office.jpg",
+      image: "/img/serti/serti-s1infor.png",
     },
     {
       label: "card-2",
-      title: "Gambar 2",
-      description: "yahahai",
-      image: "/img/backendbg.jpg",
+      title: "Kunjungan Industri",
+      description: "yahahi",
+      image: "/img/serti/serti-kunjin.jpg",
     },
     {
       label: "card-3",
-      title: "Gambar 3",
-      description: "yahahai",
-      image: "/img/frontend.jpg",
+      title: "International Class",
+      description: "yahahi",
+      image: "/img/serti/serti-interclass.jpg",
+    },
+    {
+      label: "card-4",
+      title: "Camping Pendidikan Dasar",
+      description: "yahahi",
+      image: "/img/serti/serti-cpd.jpg",
+    },
+    {
+      label: "card-5",
+      title: "Pesantren Kilat",
+      description: "yahahi",
+      image: "/img/serti/serti-sanlat.png",
     },
   ];
 
@@ -124,7 +136,7 @@ export default function Index() {
                         </p>
                       </div>
                       <div className="card-header w-100 d-flex justify-content-end">
-                        <a href="https://givaldigumelarsetiawan@gmail.com">
+                        <a href="mailto:givaldigumelarsetiawan@gmail.com">
                           <Image
                             src={"/icon/mail.svg"}
                             alt=""

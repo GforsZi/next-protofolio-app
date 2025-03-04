@@ -174,6 +174,18 @@ export default function Navbar() {
                         </li>
                       </ul>
                     </li>
+                    <li>
+                      <button
+                        className="nav-link"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample"
+                        aria-expanded="false"
+                        aria-controls="collapseExample"
+                      >
+                        more
+                      </button>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -181,6 +193,36 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
+      <div
+        className="collapse mb-2 position-fixed border-bottom vw-100 border-dark-subtle"
+        style={{
+          zIndex: "20",
+          marginTop: "57px",
+        }}
+        id="collapseExample"
+      >
+        <div
+          className="card card-body rounded-0"
+          style={{ backgroundColor: "rgba(212, 212, 212, 0.4)" }}
+        >
+          <div className="container">
+            <div className="d-flex overflow-x-scroll">
+              <a
+                href="/Dasboard/Add"
+                className="btn btn-primary px-2 py-0 mx-1"
+              >
+                Add
+              </a>
+              <a
+                href="/Dasboard/Edit"
+                className="btn btn-outline-primary px-2 py-0 mx-1"
+              >
+                Edit
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
