@@ -6,6 +6,8 @@ import Image from "next/image";
 import Ld_container from "@/components/layout/ld_container";
 import Link from "next/link";
 import Card from "@/components/layout/card";
+import Model from "@/components/layout/model";
+import TechModel from "@/components/layout/stackmodel";
 
 const HeavyComponent = dynamic(() => import("../components/layout/shell"), {
   ssr: false,
@@ -58,6 +60,20 @@ export default function Index() {
       image: "/img/serti/serti-sanlat.png",
     },
   ];
+
+  const model_items = [
+    {
+      label: "model-1",
+      tittle: "Givaldi Gumelar Setiawan",
+      body: "Saya merupakan seorang programmer dibidang pengembangan website khususnya diranah backend. Saya selalu berusaha menerapkan konsep clean code di semua project yang saya kerjakan agar mudah dikembangkan dan dipelihara.",
+    },
+  ];
+
+  const tech_items = [
+    { label: "techmodel-1", tittle: "My stach", body: "yahahai" },
+  ];
+
+  const tech_icons = [{ tittle: "React", icon: "/icon/stack/React.svg" }];
 
   return (
     <>
@@ -129,7 +145,7 @@ export default function Index() {
                             type="button"
                             className="ms-1"
                             data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop"
+                            data-bs-target="#model-1"
                           >
                             Detail
                           </a>
@@ -219,9 +235,16 @@ export default function Index() {
               id="carouselExampleCaptions"
               className="carousel slide border border-primary p-3"
             >
-              <h1 className="text-primary border-bottom border-primary">
-                My skill
-              </h1>
+              <a
+                type="button"
+                className="text-decoration-none"
+                data-bs-toggle="modal"
+                data-bs-target="#techmodel-1"
+              >
+                <h1 className="text-primary border-bottom border-primary">
+                  My skill
+                </h1>
+              </a>
               <div className="carousel-indicators">
                 <button
                   type="button"
@@ -346,38 +369,64 @@ export default function Index() {
           <Card items={items} />
         </Ld_container>
       </main>
-      <div
-        className="modal fade"
-        id="staticBackdrop"
-        data-bs-backdrop="static"
-        data-bs-keyboard="false"
-        tabIndex={-1}
-        aria-labelledby="staticBackdropLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content bg-dark border border-primary rounded-3 shadow">
-            <div className="modal-body p-4 text-center">
-              <h5 className="mb-2 text-primary">Givaldi Gumelar Setiawan</h5>
-              <p className="mb-0 text-start text-white">
-                Saya merupakan seorang programmer dibidang pengembangan website
-                khususnya diranah backend. Saya selalu berusaha menerapkan
-                konsep clean code di semua project yang saya kerjakan agar mudah
-                dikembangkan dan dipelihara.
-              </p>
-            </div>
-            <div className="modal-footer  p-0">
-              <button
-                type="button"
-                className="btn btn-dark text-primary fs-6 text-decoration-none w-100 py-3 m-0 rounded-0"
-                data-bs-dismiss="modal"
-              >
-                oke
-              </button>
-            </div>
-          </div>
+      <Model items={model_items} />
+      <TechModel items={tech_items} icons={tech_icons} />
+
+      <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-primary">
+        <div className="col-md-4 d-flex ps-5 align-items-center">
+          <a
+            href="/"
+            className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+          >
+            <Image
+              src={"/img/homechar.jpg"}
+              alt=""
+              className="rounded-circle"
+              width={"40"}
+              height={"40"}
+            />
+          </a>
+          <span className="mb-3 mb-md-0 text-primary">
+            © 2025 Gfors Corporation
+          </span>
         </div>
-      </div>
+
+        <ul className="nav col-md-4 pe-5 text-primary justify-content-end text-primary list-unstyled d-flex">
+          <li className="ms-3">
+            <a href="https://wa.me/qr/KCC4Z7RZPKW4O1">
+              <Image
+                src={"/icon/message-circle.svg"}
+                alt=""
+                className="mx-1"
+                width={"30"}
+                height={"30"}
+              />
+            </a>
+          </li>
+          <li className="ms-3">
+            <a href="https://www.instagram.com/giv.aldi07?igsh=cDVlZWdsZmFqMGJk">
+              <Image
+                src={"/icon/instagram.svg"}
+                alt=""
+                className="mx-1"
+                width={"30"}
+                height={"30"}
+              />
+            </a>
+          </li>
+          <li className="ms-3">
+            <a href="https://github.com/GforsZi">
+              <Image
+                src={"/icon/github.svg"}
+                alt=""
+                className="mx-1"
+                width={"30"}
+                height={"30"}
+              />
+            </a>
+          </li>
+        </ul>
+      </footer>
     </>
   );
 }
