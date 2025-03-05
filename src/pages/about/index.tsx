@@ -4,7 +4,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>About page</title>
       </Head>
       <main>
         <header

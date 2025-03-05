@@ -1,12 +1,12 @@
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
-import Ld_container from "@/components/layout/ld_container";
 import Link from "next/link";
-import Card from "@/components/layout/card";
-import Model from "@/components/layout/model";
-import TechModel from "@/components/layout/stackmodel";
-import HeaderContainer from "@/components/layout/header-container";
+import Ld_container from "@/components/ld_container";
+import Card from "@/components/card";
+import Model from "@/components/model";
+import TechModel from "@/components/stackmodel";
+import HeaderContainer from "@/components/header-container";
 
 // const HeavyComponent = dynamic(() => import("../components/layout/shell"), {
 //   ssr: false,
@@ -81,6 +81,7 @@ export default function Index() {
     { tittle: "Express", icon: "/icon/stack/Express.svg" },
     { tittle: "Next", icon: "/icon/stack/Next.js.svg" },
     { tittle: "PHP", icon: "/icon/stack/PHP.svg" },
+    { tittle: "Composer", icon: "/icon/stack/Composer.svg" },
     { tittle: "Laravel", icon: "/icon/stack/Laravel.svg" },
     { tittle: "Livewire", icon: "/icon/stack/Livewire.svg" },
     { tittle: "Arduino", icon: "/icon/stack/Arduino.svg" },
@@ -93,7 +94,7 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Landing page</title>
       </Head>
       <main>
         <HeaderContainer>
@@ -148,6 +149,15 @@ export default function Index() {
                   </p>
                 </div>
                 <div className="card-header w-100 d-flex justify-content-end">
+                  <a href="/pdf/My-CV.pdf">
+                    <Image
+                      src={"/icon/file-text.svg"}
+                      alt=""
+                      className="mx-1"
+                      width={"30"}
+                      height={"30"}
+                    />
+                  </a>
                   <a href="mailto:givaldigumelarsetiawan@gmail.com">
                     <Image
                       src={"/icon/mail.svg"}
@@ -211,12 +221,12 @@ export default function Index() {
               <h3 className="mb-0">About Me</h3>
               <div className="mb-1 text-body-secondary">Nov 12</div>
               <p className="card-text mb-auto">
-                Saya lahir pada 2007 di Cianjur, sejak umur 2 tahun saya sudah
-                diperkenalkan pada dunia komputer oleh ayah saya dan saat saya
-                menginjak bangku SMP saya memberanikan diri untuk mempelajari
-                ilmu komputer dengan lebih mendalam mulai dari hardware hingga
-                software saya pelajari. Sampai hingga akhirnya saya terjun ke
-                dunia programming pada usia 15 tahun...
+                Saya lahir pada tahun 2007 di Cianjur, sejak umur 2 tahun saya
+                sudah diperkenalkan pada dunia komputer oleh ayah saya dan saat
+                saya menginjak bangku SMP saya memberanikan diri untuk
+                mempelajari ilmu komputer dengan lebih mendalam mulai dari
+                hardware hingga software saya pelajari. Sampai hingga akhirnya
+                saya terjun ke dunia programming pada usia 15 tahun...
               </p>
               <Link href={"/about"}>Continue reading</Link>
             </div>
