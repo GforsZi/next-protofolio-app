@@ -174,7 +174,7 @@ export default function Navbar() {
                         </li>
                       </ul>
                     </li>
-                    <li>
+                    {/* <li>
                       <button
                         className="nav-link"
                         type="button"
@@ -185,7 +185,7 @@ export default function Navbar() {
                       >
                         more
                       </button>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -193,7 +193,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div
+      {/* <div
         className="collapse mb-2 position-fixed border-bottom vw-100 border-dark-subtle"
         style={{
           zIndex: "20",
@@ -222,7 +222,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
