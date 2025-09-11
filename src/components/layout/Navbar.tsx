@@ -12,7 +12,9 @@ export default function Navbar() {
           <div>
             <a className="navbar-brand text-start" href="/">
               <Image
-                src={"/img/homechar.jpg"}
+                src={
+                  "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757565682/homechar_uku3ek.jpg"
+                }
                 alt=""
                 className="rounded-circle"
                 width={"40"}

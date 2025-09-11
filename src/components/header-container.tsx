@@ -24,15 +24,17 @@ export default function HeaderContainer(props: headerProps) {
   }, []);
 
   useEffect(() => {
-    setBg("/img/main.jpg");
+    setBg(
+      "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757569845/main_tsnikb.jpg"
+    );
   }, [router.asPath]);
   return (
     <>
       <header
         className=" w-100 vh-100 position-relative d-flex align-items-center "
         style={{
-          background: `linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url(${bg})`,
-          backgroundPosition: "center",
+          background: `linear-gradient(to bottom, rgba(16,16,16, 0.3) 0%, rgba(16,16,16, 0.7) 75%, #000 100%), url(${bg})`,
+          objectFit: "cover",
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "scroll",
           backgroundSize: "cover",

@@ -17,38 +17,51 @@ export default function Index() {
   const items = [
     {
       label: "card-1",
-      title: "S1 Informatika",
+      title: "Trial Class S1 Informatika",
       description:
         "Serifikat yang saya dapatkan setelah mengikuti trialclass di TelU",
-      image: "/img/serti/serti-s1infor.png",
+      image:
+        "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757562507/serti-s1infor_rpjhiz.png",
     },
     {
       label: "card-2",
       title: "Kunjungan Industri",
       description:
         "Sertifikat yang saya dapat setelah mengikuti kegiatan kunjungan industri di jogja",
-      image: "/img/serti/serti-kunjin.jpg",
+      image:
+        "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757562515/serti-kunjin_abi8qp.jpg",
     },
     {
       label: "card-3",
       title: "International Class",
       description:
         "Sertifikat yang saya dapatkan setelah mengikuti international class bersama mahasiswa dari korea",
-      image: "/img/serti/serti-interclass.jpg",
+      image:
+        "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757562511/serti-interclass_rmmnqt.jpg",
     },
     {
       label: "card-4",
       title: "Camping Pendidikan Dasar",
       description:
         "Sertifikat yang saya dapatkan setelah mengikuti kegiatan CPD",
-      image: "/img/serti/serti-cpd.jpg",
+      image:
+        "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757562510/serti-cpd_niox1o.jpg",
     },
     {
       label: "card-5",
-      title: "Pesantren Kilat",
+      title: "NextSkill Backend class",
       description:
-        "Sertifikat yang saya dapatkan setelah mengikuti kegiatan SanLat pada bula Ramadhan",
-      image: "/img/serti/serti-sanlat.png",
+        "Sertifikat yang saya dapatkan setelah mengikuti kelas backend dari nextskill",
+      image:
+        "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757562461/Backend_xy3rff.png",
+    },
+    {
+      label: "card-6",
+      title: "NextSkill UI/UX class",
+      description:
+        "Sertifikat yang saya dapatkan setelah mengikuti kelas UI/UX dari nextskill",
+      image:
+        "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757562475/UIUX_izykjz.png",
     },
   ];
 
@@ -107,7 +120,9 @@ export default function Index() {
             >
               <div className="w-100">
                 <Image
-                  src={"/img/mainchar.png"}
+                  src={
+                    "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757565683/mainchar_iyfez1.png"
+                  }
                   alt="mainchar"
                   priority
                   className="w-100 object-fit-contain"
@@ -132,7 +147,7 @@ export default function Index() {
               style={{ minWidth: "350px" }}
             >
               <div className="card border-primary mb-3 text-bg-dark">
-                <div className="card-header"></div>
+                <div className="card-header border-primary"></div>
                 <div className="card-body text-primary">
                   <h3 className="card-title mb-4">Givaldi Gumelar Setiawan</h3>
                   <p className="card-text fs-5 text-start">
@@ -206,7 +221,9 @@ export default function Index() {
           >
             <div className="col-auto d-none d-md-block h-100">
               <Image
-                src={"/img/aboutme.jpg"}
+                src={
+                  "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757565683/aboutme_yqsfko.jpg"
+                }
                 alt=""
                 priority
                 className="h-100 ms-5"
@@ -219,7 +236,7 @@ export default function Index() {
                 Hello World
               </strong>
               <h3 className="mb-0">About Me</h3>
-              <div className="mb-1 text-body-secondary">Nov 12</div>
+              <div className="mb-1 text-body-secondary">2025-2026</div>
               <p className="card-text mb-auto">
                 Saya lahir pada tahun 2007 di Cianjur, sejak umur 2 tahun saya
                 sudah diperkenalkan pada dunia komputer oleh ayah saya dan saat
@@ -273,7 +290,9 @@ export default function Index() {
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <Image
-                    src={"/img/frontend.jpg"}
+                    src={
+                      "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757565587/frontend_za9zub.jpg"
+                    }
                     alt=""
                     priority
                     unoptimized
@@ -296,7 +315,9 @@ export default function Index() {
                 </div>
                 <div className="carousel-item">
                   <Image
-                    src={"/img/backendbg.jpg"}
+                    src={
+                      "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757565590/backendbg_d9afwm.jpg"
+                    }
                     alt=""
                     priority
                     unoptimized
@@ -319,7 +340,9 @@ export default function Index() {
                 </div>
                 <div className="carousel-item">
                   <Image
-                    src={"/img/office.jpg"}
+                    src={
+                      "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757565592/office_fwgtgp.jpg"
+                    }
                     alt=""
                     priority
                     unoptimized
@@ -382,7 +405,9 @@ export default function Index() {
             className="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
           >
             <Image
-              src={"/img/homechar.jpg"}
+              src={
+                "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757565682/homechar_uku3ek.jpg"
+              }
               alt=""
               className="rounded-circle"
               width={"40"}

@@ -26,7 +26,7 @@ const Card: React.FC<{
       </h1>
       <div
         className="row row-cols-2 mt-3 h-100 row-cols-md-3 g-3"
-        style={{ overflow: "scroll", maxHeight: "70vh" }}
+        style={{ overflowY: "scroll", maxHeight: "70vh" }}
         ref={containerRef}
       >
         {items.map((item, index) => (
