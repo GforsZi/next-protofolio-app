@@ -21,13 +21,13 @@ export default function About() {
                   <div className="col-auto d-none d-md-block h-100">
                     <Image
                       src={
-                        "https://res.cloudinary.com/dytsbyzd7/image/upload/v1757565683/aboutme_yqsfko.jpg"
+                        "https://res.cloudinary.com/dytsbyzd7/image/upload/v1758110309/IMG0008A_ng6dxm.jpg"
                       }
                       alt=""
                       priority
-                      className="h-100 ms-5"
-                      height={"250"}
-                      width={"250"}
+                      className=" object-fit-cover"
+                      height={"345"}
+                      width={"300"}
                     />
                   </div>
                   <div className="col p-4 d-flex flex-column position-static">
