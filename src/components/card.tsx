@@ -1,9 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { gsap } from "gsap";
 
 const Card: React.FC<{
   items: { label: string; title: string; description: string; image: string }[];
-}> = ({ items }) => {
+  title: string;
+}> = ({ items, title }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -22,7 +23,7 @@ const Card: React.FC<{
       style={{ maxHeight: "90vh" }}
     >
       <h1 className="text-primary border-bottom border-primary ms-4 p-2">
-        My achivment
+        My {title}
       </h1>
       <div
         className="row row-cols-2 mt-3 h-100 row-cols-md-3 g-3"

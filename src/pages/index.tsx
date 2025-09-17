@@ -236,7 +236,7 @@ export default function Index() {
                 Hello World
               </strong>
               <h3 className="mb-0">About Me</h3>
-              <div className="mb-1 text-body-secondary">2025-2026</div>
+              <div className="mb-1 text-body-secondary">2007-2026</div>
               <p className="card-text mb-auto">
                 Saya lahir pada tahun 2007 di Cianjur, sejak umur 2 tahun saya
                 sudah diperkenalkan pada dunia komputer oleh ayah saya dan saat
@@ -392,7 +392,7 @@ export default function Index() {
           </div>
         </Ld_container>
         <Ld_container>
-          <Card items={items} />
+          <Card items={items} title="achievement" />
         </Ld_container>
       </main>
       <Model items={model_items} />

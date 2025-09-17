@@ -53,8 +53,11 @@ export default function Navbar() {
                 <div className="navbar-collapse" id="navbarSupportedContent">
                   <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <Link className="nav-link" href="/home">
-                        Home
+                      <Link
+                        className="nav-link"
+                        href="https://github.com/GforsZi"
+                      >
+                        Github
                       </Link>
                     </li>
                     <li className="nav-item dropdown">
